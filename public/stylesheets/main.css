@@ -1,0 +1,69 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #323232 url(../images/body_bg.png) 0 0 repeat;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.center {
+  margin: 0 auto;
+  width: 957px;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#main .center {
+  padding: 30px 0 55px 0;
+  width: 877px; /*957-80*/
+}
+
+#main .title {
+  position: relative;
+}
+
+#main h2 {
+  color: #FFD800;
+  font: bold 22px 'Arial', 'Helvetica', sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.698);
+}
+
+#main ul {
+  margin: 0 0 20px 37px;
+}
+
+#main ul li {
+  list-style-type: none;
+  color: #bdbdbd;
+  font: 14px/20px 'Arial', 'Helvetica', sans-serif;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+#main .form label {
+  display: block;
+  float: left;
+  margin: 12px 10px 0 0;
+  text-align: right;
+  width: 27px;
+  color: #BDBDBF;
+  font: bold 14px 'Arial', 'Helvetica', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.698);
+}
+
+#main .form input.text {
+  background-color: #FFFFFF;
+  border: medium none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: #333333;
+  font: bold 14px 'Arial', 'Helvetica', sans-serif;
+  margin-bottom: 8px;
+  padding: 12px;
+  width: 260px;
+}
