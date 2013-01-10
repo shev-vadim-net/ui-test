@@ -1,2 +1,4 @@
 .idea/*
 config/database.yml
+log/*
+ui_interface*
