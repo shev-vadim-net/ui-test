@@ -2,6 +2,7 @@ class MainController < ApplicationController
   layout 'main'
 
   def index
+    @urls = Url.all.map{|url| url.url}
   end
 
   def create
@@ -11,8 +12,8 @@ class MainController < ApplicationController
         result = []
         urls.each do |url|
           url_instance = Url.new(:url => url)
-          result.push({:url => url, :saved => true}) if url_instance.save
-        end
+          result.push(url) if url_instance.save
+        end unless urls.nil?
         response.headers['Content-type'] = "text/plain; charset=utf-8"
         render :text => result.to_json
       end
